@@ -52,6 +52,8 @@ def booking_scraping(date_check_in, date_check_out):
       location_element = hotel.find('span', {'data-testid': 'address'})
       location = location_element.text.strip()
 
+      # TODO testovani
+
       # Extract the hotel price
       price_element = hotel.find('span', {'data-testid': 'price-and-discounted-price'})
       price = price_element.text.strip()
